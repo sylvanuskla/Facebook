@@ -1,0 +1,11 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    var state = "Kla";
+}
+
+
+<a id="facebook-button" class="btn btn-social btn-facebook" style="color:white" href="@Model.facebook.GetLoginUrl(state)">
+    <i class="fa fa-facebook-f"></i> Sign in with Facebook
+</a>
